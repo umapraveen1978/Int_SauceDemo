@@ -35,8 +35,8 @@ public class sauceDemo extends BaseTest {
             }
 
 // Find Add to Cart button associated to Highest price and click
-            WebElement addToCartButton = highestProduct.findElement(By.xpath("../button"));
-            addToCartButton.click();
+        WebElement addToCartButton = highestProduct.findElement(By.xpath("../button"));
+        addToCartButton.click();
         }
 
     public void click(By by){
