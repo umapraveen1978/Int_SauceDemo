@@ -21,7 +21,7 @@ public class sauceDemo extends BaseTest {
         click(By.xpath("//*[@id='login-button']"));
 
 // Get a list of all product prices
-            List<WebElement> allPrices = driver.findElements(By.xpath("//*[@class='inventory_item_price']"));
+        List<WebElement> allPrices = driver.findElements(By.xpath("//*[@class='inventory_item_price']"));
 
 // Find the highest priced product
         WebElement highestProduct = allPrices.get(0);
@@ -41,7 +41,7 @@ public class sauceDemo extends BaseTest {
         }
 
     public void click(By by){
-    wait.until(ExpectedConditions.elementToBeClickable(by)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(by)).click();
     }
 
     public void sendKeys(By by, String value){
