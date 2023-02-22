@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import java.util.List;
 
 public class sauceDemo extends BaseTest {
@@ -36,6 +37,7 @@ public class sauceDemo extends BaseTest {
 // Find Add to Cart button associated to Highest price and click
         WebElement addToCartButton = highestProduct.findElement(By.xpath("../button"));
         addToCartButton.click();
+        Thread.sleep(5000);
         }
 
     public void click(By by){
